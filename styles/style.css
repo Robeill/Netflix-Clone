@@ -16,6 +16,10 @@ body {
 .content-wrapper {
     background: #141414;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     top: 0;
     bottom: 0;
     left: 0;
@@ -99,13 +103,6 @@ a {
     align-items: center;
 }
 
-.manage-button-container {
-    position: fixed;
-    bottom: 13vw;
-    left: 50%;
-    transform: translateX(-50%);
-}
-
 .manage-button {
     background-color:transparent;
     border:1px solid grey;
@@ -114,9 +111,14 @@ a {
     display:block;
     font-size:1.2vw;
     letter-spacing:2px;
-    margin:2em 0 1em;
+    margin:4em 0 1em;
     padding:.5em 1.5em;
 }
+.manage-button:hover {
+    border:1px solid #fff;
+    color:#fff
+  }
+  
 @media screen and (min-width:1666px) {
     .container .profile-name {
       font-size:24px;
